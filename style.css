@@ -1,0 +1,422 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  }
+
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Lato:wght@300;400;700&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap");
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* #### HEADER #### */
+
+header {
+  /*border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.Cabeçalho {
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  z-index: 1;
+}
+
+.selfcare {
+  margin-left: 30px;
+
+}
+
+.Pesquisa {
+  margin-right: 50px;
+}
+
+.Pesquisa a {
+  margin-right: 20px; 
+  text-decoration: none;
+}
+
+.Pesquisa img { 
+      height: 3.5vh;
+ }
+
+
+.logo {
+  /* border: 2px solid red; */
+  width: 20%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.logo img {
+  /*  border: 2px solid black; */
+  width: 40%; }
+
+
+/* #### MAIN #### */
+
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.promo1{
+  border-bottom: 1px solid #A5A1A1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+
+}
+.promo{
+  height: 30px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-block: 20px;
+    
+}
+
+.promo h1 {
+  font-size: 20px;
+}
+
+.boxcard {
+  /* border: solid 1px; */
+  height: 130vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 170px;
+ 
+  
+}
+
+.card {
+  /* border: solid 3px; */
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: calc(33.33% - 20px); 
+  margin: 10px;
+  
+}
+
+figure {
+  background-color: #5CA720;
+  width: 17vw;
+  height: 34.2vh;
+  
+}
+
+.imgcard {width: 17vw;}
+
+.imgcard:hover {opacity: 0.5;}
+
+button {
+    cursor: pointer;
+    width: 170px;
+    height: 51px;
+    border: none;
+    border-radius: 15px;
+    background: #5CA720;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.card button {color: white;}
+
+.card button:hover {background-color: #512200BD ;}
+
+.card span {
+  color: #5CA720;
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: 2px solid #5CA720;
+}
+
+.card p {font-size: 1.2em;}
+
+/* #### FOOTER #### */
+
+footer{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #F9F9F9;
+  border-top: 1px solid #A5A1A1;
+  margin-top: 500px;
+}
+
+.rodape{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.textocontato ul{list-style:none;}
+
+.textocontato ul li{margin-top: 15px;}
+
+.textocontato ul li a{
+    text-decoration: none;
+    color: #161616;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.news{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.textoemail{display: flex;}
+
+.textoemail input{
+  width: 70%;
+  height: 45px;
+  outline: none;
+  border-radius: 5px 0px 0px 5px;
+  border: 0.5px solid #D9D9D9;
+  background: #FFF;
+  padding-left: 10px;
+}
+
+.textoemail button{
+  cursor: pointer;
+  width: 150px;
+  border: none;
+  color: white;
+  border-radius: 0px 5px 5px 0px;
+  background: #5CA720;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: .3s;
+}
+.textoemail button:hover{background: rgba(81, 34, 0, 0.75);}
+
+.rodapepai{
+  border-top: 1px solid #A5A1A1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.rodape1{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.redesociais{ 
+  margin-top: 10px;
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.redesociais img{
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.pagamentos{
+  margin-top: 10px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pagamentos img{
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+
+/* #### RESPONSIVO #### */
+
+/* @CELULAR@ */
+
+@media screen and (max-width: 320px) {
+ 
+
+  .selfcare {
+    margin-left: 20px;
+  
+  }
+
+  .selfcare img {
+    height: 3vh;
+  }
+  
+  .Pesquisa {
+    margin-right: 10px;
+  }
+  
+  .Pesquisa a {
+    margin-right: 0px; 
+    text-decoration: none;
+  }
+  
+  .Pesquisa img { 
+        height: 3vh;
+   }
+ .boxcard {
+  height: 200vh;
+  width: 100vw;
+  
+ }
+
+.card {
+  width: 100%;
+}
+
+footer {
+  margin-top: 30px
+}
+
+.redesociais img{
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 10vw;
+}
+
+.pagamentos img{
+  margin-right: 0px;
+  margin-top: 5px;
+  width: 10vw;
+  padding: 3px;
+}
+
+
+}
+
+/*@TABLET@*/
+
+@media screen and ( max-width: 768px)
+
+{
+   
+
+  .boxcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 70px;   
+  }
+  
+  .card {
+    width: 100%;
+    display: flex;
+    width: calc(33% - 20px);     
+  }
+
+  .card img {width: 23vw;}
+
+  figure {
+    background-color: #5CA720;
+    width: 23vw;
+    height: 23.6vh;
+    
+  }
+
+  .imgcard:hover {opacity: 0.5;}
+
+  .card h2 {
+    font-size: 20px;
+    margin-top: 20%;
+  }
+
+  footer{height: auto;}
+  .produtos{
+
+      display: block;
+  }
+  .produtos1{gap: 30px ;}
+
+  .imagembox{width: 250px;}
+
+  .imagembox img{width: 100%;}
+
+  .redesociais{width: 20%;}
+
+  .rodape{flex-direction: column;}
+
+  .news h4{margin-block: 20px;}
+
+  .news{
+      width: 100%;
+      margin-block: 30px;
+  }
+}
+
+
+/* SMARTWATCH */
+
+
+
+@media screen and ( max-width: 480px) {
+
+
+.boxcard {margin-left: 20px;}
+
+.card {
+  margin-left: 20px;
+  margin-right: 1px; 
+  display: flex;
+  width: calc(40% - 20px);
+}
+
+.card img {
+  width: 30vw;
+  height: 27vh;
+}
+
+figure {
+  background-color: #5CA720;
+  width: 30vw;
+  height: 27vh;  
+}
+
+button{
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+}
+
+footer {margin-top: 230%;}
+
+
+
+}
